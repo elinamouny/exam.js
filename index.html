@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="images 2/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meal App</title>
+    
+</head>
+<body>
+
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-5">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="toggleSearchInputs(); hideSideNav()" class="py-3 position-relative cursor-pointer">Perform a search</li>
+                    <li onclick="getCategories(); hideSideNav()" class="py-3 position-relative cursor-pointer">Explore Categories</li>
+                    <li onclick="getArea(); hideSideNav()" class="py-3 position-relative cursor-pointer">Select Area</li>
+                    <li onclick="getIngredients();hideSideNav()" class="py-3 position-relative cursor-pointer">Check Ingredients</li>
+                    <li onclick="showContacts(); hideSideNav()" class="py-3 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+                
+            </div>
+            
+            <div class="loading-screen fixed-top-0 start-0 end-0 bottom-0 black-bg flex-center">
+                <i class="loading-spinner fas fa-spinner fa-spin fa-5x"></i>
+            </div>
+            
+
+            <div class="footer navigation">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="header navigation d-flex flex-column justify-content-between py-5 text-center px-3 bg-white text-black">
+            <img class="logo" src="images 2/logo.png" alt="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container w-75" id="SearchBox">
+       
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row py-5 g-4" id="ItemRow">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
